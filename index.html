@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-cream">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,30 +18,43 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/output.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div class="hero">
-          <img src="./images/image-product-mobile.jpg" alt="" />
+    <div class="container mx-auto w-fit">
+      <!-- Card -->
+      <div class="flex mt-10">
+        <!-- Hero image -->
+        <div class="max-w-[18rem]">
+          <img
+            src="./images/image-product-desktop.jpg"
+            class="rounded-tl-md rounded-bl-md"
+            alt=""
+          />
         </div>
-        <div class="content">
-          <div class="category">P E R F U M E</div>
-          <div class="item-title"><h1>Gabrielle Essence Eau De Parfum</h1></div>
-          <div class="item-info">
+        <!-- Content -->
+        <div
+          class="rounded-br-md rounded-tr-md bg-white border-separate max-w-xs min-h-fit"
+        >
+          <div class="m-5 text-sm text-darkGrayBlue">P E R F U M E</div>
+          <div class="m-5 text-4xl text-veryDarkBlue font-fraunces">
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+          </div>
+          <div class="m-5 text-darkGrayBlue text-sm leading-loose">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </div>
-          <div class="item-prices">
-            <span class="current-price">$149.99</span>
-            <span class="original-price">$169.99</span>
+          <div class="m-5 font-fraunces flex items-center">
+            <span class="text-darkCyan text-3xl mr-5">$149.99</span>
+            <span class="text-darkGrayBlue line-through text-xs">$169.99</span>
           </div>
-          <div class="button-holder">
-            <button class="btn-primary">
+          <div class="m-5 font-montserrat">
+            <button
+              class="bg-darkCyan hover:bg-darkerCyan text-white rounded flex justify-center items-center min-w-full h-10 space-x-5"
+            >
               <img src="./images/icon-cart.svg" alt="" />
-              Add to Cart
+              <span>Add to Cart</span>
             </button>
           </div>
         </div>

@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  height: 85vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.content {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 0px 15px 15px;
+  /* height: 100%; */
+}
+
+/* set margin on children */
+.content > * {
+  margin: 15px;
+}
+
+.category {
+  color:  hsl(228, 12%, 48%);
+  margin: 15px 0 10px 15px;
+  font-size: smaller;
+}
+
+.item-title {
+  margin: 15px;
+  font-family: 'Fraunces', serif;
+}
+
+.item-info {
+  font-size: 14px;
+  color:  hsl(228, 12%, 48%);
+  margin: 15px 15px 30px 15px;
+  line-height: 1.75;
+}
+
+.item-prices {
+  font-family: 'Fraunces', serif;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  padding: 0 15px 0 0;
+}
+
+.original-price {
+  color:hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-family:'Montserrat', sans-serif;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.btn-primary img {
+  margin-right: 8px;
+}
+
+.btn-primary:hover {
+  background-color:  hsl(158, 37%, 28%);
+  transition: 0.2s;
+}
+
+@media (min-width: 480px) {
+  .card {
+    flex-direction: row;
+    height: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .hero img {
+    border-radius: 15px 0px 0px 15px;
+  }
+  .content {
+    border-radius: 0px 15px 15px 0px;
+    align-self: stretch;
+  }
+}

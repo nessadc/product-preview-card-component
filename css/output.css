@@ -559,6 +559,11 @@ video {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -579,8 +584,8 @@ video {
   height: 100%;
 }
 
-.max-h-1 {
-  max-height: 0.25rem;
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-fit {
@@ -615,10 +620,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.items-stretch {
-  align-items: stretch;
 }
 
 .justify-center {
@@ -732,27 +733,19 @@ video {
     flex-direction: row;
   }
 
-  .sm\:rounded-md {
-    border-radius: 0.375rem;
-  }
-
-  .sm\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
-  }
-
-  .sm\:rounded-tr-none {
-    border-top-right-radius: 0px;
-  }
-
-  .sm\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+  .sm\:rounded-bl-md {
+    border-bottom-left-radius: 0.375rem;
   }
 
   .sm\:rounded-bl-none {
     border-bottom-left-radius: 0px;
   }
 
-  .sm\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+  .sm\:rounded-tr-md {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .sm\:rounded-tr-none {
+    border-top-right-radius: 0px;
   }
 }
